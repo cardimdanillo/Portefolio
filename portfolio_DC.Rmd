@@ -199,7 +199,7 @@ knitr::include_graphics('./compressed/map_cf.jpg')
 
 ### Inventários florestais
 <br>
-Para requerimento de Autorização de Supressão Vegetal (ASV) é preciso realizar inventário florestal. Para tanto é necessário elaborar levantamento qualitativo e quantitativo da vegetação presente. Os mapas a seguir foram feitos para a construção de relatórios de inventários.
+Para requerimento de Autorização de Supressão Vegetal (ASV) é preciso realizar inventário florestal. Para tanto é necessário elaborar levantamento qualitativo e quantitativo da vegetação presente. Os mapas a seguir foram feitos para a construção de relatórios de inventários. os mapa são a respeito dos estudos ambientais para implantação do Projeto DRENAR. Um gande e importante projeto de drenagem em Brasília no qual tenho muito orgulho de ter feito parte.
 <br>
 
 ```{r, echo=FALSE, out.width='70%', fig.align='center', message=FALSE, fig.cap="Mapa de localização do Projeto Drenar DF"}
@@ -254,53 +254,112 @@ knitr::include_graphics('./compressed/porto-band2.png')
 <br>
 Dentre as muitas áreas que a graduação em engenharia abrange, a **análise de dados** e o **geoprocessamento** são as que mais me chamam atenção. Por conta disso, a maioria dos cursos extracurriculares que fiz foram ligados a essas áreas.
 <br>
+
 <br>
 Fiz curso para aprender a manusear o **arcmap 10.8**. O curso foi oferecido pela empresa júnior ECOFLOR e teve 20 horas. O conteúdo abordou operações básicas com shapefiles além de classificação de uso do solo com as ferramentas de Classificação Supervisionada e Classificação Não Supervisionada. 
 <br>
+
 <br>
 Este curso foi o ponto de início para a realização de alguns trabalhos com geoprocessamento, aprender a manusear o QGIS e me ajudou muito no estágio.
 <br>
 
 <div style="display: flex;">
 <div>
+
 <br>
 A **Linguagem R** é muito difundida na comunidade científica para fazer análise de dados. Quando apareceu uma chance de aprender em um curso gratuito também oferecido pela ECOFLOR, aproveitei. O curso abordou pacotes básicos para manipulação de dados e, a exemplo do arcgis, foi o início de uma grande aprendizado. Exemplo disso é a produção deste portifolio feito com RMarkdown e publicado na internet com auxílio da plataforma rpubs.
 <br>
 <br>
-A minha base em programação é C++. Linguagem na qual fui iniciado durante o curso de engenharia. Hoje sou mais familirizado com a Linguagem R, como já citei, e Python. **Python** tem sido meu novo desafio de aprendizado. Tenho feito cursos voltados à análise de dados e machine learning. E meu próximo passo será aprender a linguagem SQL.
+A minha base em programação é C++. Linguagem na qual fui iniciado durante o curso de engenharia. Hoje sou mais familirizado com a Linguagem R, como já citei, e Python. **Python** tem sido meu novo desafio de aprendizado. Tenho feito cursos voltados à análise de dados e machine learning. Aliado a isso fiz cursos sobre linguagem **SQL**, mais especificamente na SGDB **PostgreSQL**.
 <br>
+
 <br>
 </div>
 <div>
+
 <br>
 ```{r, echo=FALSE, out.width='50%', fig.align='center', message=FALSE, warning=FALSE}
 knitr::include_graphics('D:/Documentos/portfolio/imagens/r_logo.png')
 ```
 <br>
+
 <br>
 ```{r, echo=FALSE, out.width='150%', fig.align='center', message=FALSE, warning=FALSE}
 knitr::include_graphics('D:/Documentos/portfolio/imagens/python.png')
 ```
 <br>
-</div>
-</div>
+
 <br>
-Durante o período em que fui monitor da disciplina _Manejo Florestal_ desenvolvi dois scripts que aplicam a metodologia da mensuração florestal. Um foi construído com o **python** através da interface _jupyter notebook_ e o objetivo foi classificar a capacidade produtiva de um plantio florestal em sítios.
+```{r, echo=FALSE, out.width='50%', fig.align='center', message=FALSE, warning=FALSE}
+knitr::include_graphics('D:/Documentos/portfolio/imagens/postgresql.png')
+```
+<br>
+</div>
+</div>
+
+# Projetos
+
+<br>
+Durante o período em que fui monitor da disciplina _Manejo Florestal_ desenvolvi dois scripts que aplicam a metodologia da mensuração florestal. Estes projetos ajudaram-me tanto no processo de tutoria dos alunos que faziam a cadeira de Manejo Florestal, quanto na fixação desta metodologia.
+<br>
+
+## Calculo da altura dominante de um plantio florestal.
+<br>
+O primeiro script foi construído com **liguagem R** e o objetivo foi calcular as alturas dominantes tendo como base os dados oriundos de inventários realizados em anos anteriores. O cálculo das alturas dominantes é importante, pois é uma das variáveis para realizar a prognose de produção de uma maciço florestal. A imagem abaixo retrata as alturas dominantes em função da idade do plantio e foi construído com o pacote **GGPLOT2**.
+<br>
+
+<br>
+```{r, echo=FALSE, out.width='75%', fig.align='center', message=FALSE}
+knitr::include_graphics('./gra_hdom_point.png')
+```
+<br>
+
+<br>
+O repositório deste projeto pode ser consultado e baixado no github: https://github.com/cardimdanillo/Altura-Dominante-de-plantio-florestal
+<br>
+
+## Classificação da capacidade produtiva de uma floresta plantada.
+<br>
+O outro script foi construído com auxílio do **python** através da interface _jupyter notebook_ e o objetivo foi classificar a capacidade produtiva de um plantio florestal em sítios. Passo seguinte ao calculo das alturas dominantes.
 <br>
 <br>
 ```{r, echo=FALSE, out.width='75%', fig.align='center', message=FALSE}
 knitr::include_graphics('./compressed/sitios_python.png')
 ```
 <br>
+
+## Biblioteca no R
+
+<div style="display: flex;">
+<div style="flex: 1; padding: 10px;">
+
 <br>
-O outro script foi construído com **liguagem R** e o objetivo foi calcular as alturas dominantes tendo como base os dados oriundos de inventários realizados em anos anteriores. O cálculo das alturas dominantes é importante, pois é uma das variáveis para realizar a prognose de produção de uma maciço florestal.
+O meu Trabalho de Conclusão de Curso abordou o levantamento floristico de uma área imediatamente no entorno da Gruta Volks Club, localizada no Distrito Federal. Os dados foram tratados, avaliados e gerados gráficos usando python.
 <br>
+
 <br>
-```{r, echo=FALSE, out.width='75%', fig.align='center', message=FALSE}
-knitr::include_graphics('./compressed/hdom_r.png')
+Antes da análise dos dados do inventário é preciso preencher os nomes corretos das espécies em campo, portanto é preciso adicionar o nome do autor. Esta tarefa seria muito maçante se feita por busca manual, então desenvolvi um **pacote no R** chamado SpeciesAuthoR. Nesta biblioteca é possivel acessar a função __add_authors__, onde a entrada é o nome da espécie e a saída retorna o nome da espécie e do autor com base no banco de dados GBIF. 
+<br>
+
+</div>
+
+<div style="flex: 1; padding: 10px; display: flex; justify-content: center; align-items: center;">
+
+<br>
+```{r, echo=FALSE, out.width='100%', fig.align='center', message=FALSE, warning=FALSE}
+knitr::include_graphics('./SpeciesAuthoR.png')
 ```
 <br>
 
+</div>
+</div>
+
+<br>
+O pacote pode ser baixado da minha página no github.
+Link do Github para acessar a biblioteca SpeciesAuthoR: https://github.com/cardimdanillo/SpeciesAuthoR
+<br>
+
+<br>
 ```{r, echo=FALSE, out.width='100%', fig.align='center', message=FALSE, warning=FALSE}
 knitr::include_graphics('./compressed/porto-band2_3.png')
 ```
@@ -312,4 +371,6 @@ knitr::include_graphics('./compressed/porto-band2_3.png')
 - whatsapp: +55 61 98209 1157 
 - email: cardim.danillo@outlook.com
 (Como estou no Brasil no momento, ligue-me pelo whatsapp ou mande e-mail)
+- LinkedIn: https://www.linkedin.com/in/danillo-cardim-aa2560287
+- Github: https://github.com/cardimdanillo
 
